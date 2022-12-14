@@ -140,25 +140,25 @@ div.social-links {
 
 div.social-links>a {
     display: inline-block;
-    height: 32px;
+    height: 48px;
     background-color: var(--primary-color);
-    width: 32px; 
+    width: 48px; 
 }
 
 div.social-links>a:hover {
     display: inline-block;
-    height: 32px;
+    height: 48px;
     background-color: var(--card-color);
-    width: 32px; 
+    width: 48px; 
     transition: 300ms;
 }
 
 div.social-links>a>div>i {
     display:inline-block;
-    line-height: 32px;
+    line-height: 48px;
     color:white;
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     text-align: center;
     vertical-align: bottom;
 }
@@ -256,6 +256,31 @@ div.copyright>span {
 @media only screen and (max-width: 600px) {
     div.container {
         overflow: hidden;
+    }
+
+    div.social-links>a {
+        display: inline-block;
+        height: 32px;
+        background-color: var(--primary-color);
+        width: 32px; 
+    }
+
+    div.social-links>a:hover {
+        display: inline-block;
+        height: 32px;
+        background-color: var(--card-color);
+        width: 32px; 
+        transition: 300ms;
+    }
+
+    div.social-links>a>div>i {
+        display:inline-block;
+        line-height: 32px;
+        color:white;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        vertical-align: bottom;
     }
 
     div.header {
