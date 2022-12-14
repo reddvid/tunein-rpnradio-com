@@ -22,7 +22,7 @@
 
 body {
     height: 100%;
-    background-color: var(--background-color); 
+    background-color: var(--background-color);
 }
 
 div.container {
@@ -134,9 +134,48 @@ div.break {
     height: 0;
 }
 
-div.social-links>ul>li,div.links>ul>li {
+div.social-links {
+    margin: 16px auto;
+}
+
+div.social-links>a {
     display: inline-block;
-    margin: 8px auto;
+    height: 32px;
+    background-color: var(--primary-color);
+    width: 32px; 
+}
+
+div.social-links>a:hover {
+    display: inline-block;
+    height: 32px;
+    background-color: var(--card-color);
+    width: 32px; 
+    transition: 300ms;
+}
+
+div.social-links>a>div>i {
+    display:inline-block;
+    line-height: 32px;
+    color:white;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+div.links>ul>li {
+    display: inline-block;
+    margin: 8px 8px;
+}
+
+ul.socials>li {
+    height: 32px;
+    width: 32px;
+}
+
+ul.socials>li>a {
+    align-items: center;
+    width: 100%;
 }
 
 div.links>ul>li {
@@ -249,10 +288,10 @@ div.copyright>span {
     div.grid {
         margin-top: 60px;
         overflow: hidden;
-        display: flex; 
+        display: flex;
         flex-direction: column;
         padding: 20px 10px;
-        gap: 8px; 
+        gap: 8px;
     }
 
     div.station {
