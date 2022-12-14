@@ -134,8 +134,13 @@ div.break {
     height: 0;
 }
 
-div.social-links>ul>li {
+div.social-links>ul>li,div.links>ul>li {
     display: inline-block;
+    margin: 8px auto;
+}
+
+div.links>ul>li {
+    margin-bottom: 16px;
 }
 
 div.copyright {
