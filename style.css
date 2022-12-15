@@ -295,6 +295,10 @@ div.copyright>span {
         overflow: hidden;
     }
 
+    div.sidebar {
+        display: block;
+    }
+
     div.social-links>a {
         display: inline-block;
         height: 40px;
@@ -347,7 +351,7 @@ div.copyright>span {
         justify-content: center;
         align-self: center;
         background-color: transparent;
-    }
+    }  
 
     i.fa-bars {
         font-size: 1.8rem;
@@ -358,6 +362,10 @@ div.copyright>span {
         color: #dedede;
         text-align: center;
         vertical-align: bottom;
+    }
+
+    a.menu-icon:hover>i.fa-bars {
+        font-size: 1.6rem;
     }
 
     div.topbar {
