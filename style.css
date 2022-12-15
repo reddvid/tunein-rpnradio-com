@@ -104,7 +104,7 @@ a:hover {
 div.footer-container {
     background: var(--card-color);
     margin-top: 80px;
-    padding: 24px;
+    padding: 24px 8px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -331,30 +331,47 @@ div.copyright>span {
         height: 64px;
         z-index: 99;
         display: flex;
+        align-items: flex-start;
     }
 
     div.logo-container {
-        position: absolute;
-        margin: 0 auto;
-        left: 0;
+        left: 0; 
         z-index: 0;
         right: 0;
-        flex-grow: 0;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 16px;
     }
 
     a.menu-icon {
         margin-left: 12px;
         height: 48px;
-        z-index: 3; 
+        z-index: 3;
         width: 48px;
-        display: block;
+        display: none;
         justify-content: center;
         align-self: center;
         background-color: transparent;
-    }  
+    }
 
-    i.fa-bars {
-        font-size: 1.8rem;
+    a.news, a.download {
+        display: block;
+        margin-left: 12px;
+        height: 48px;
+        z-index: 3;
+        width: 48px;
+        justify-content: center;
+        align-self: center;
+        background-color: transparent;
+    }
+
+    a.download {
+        margin-right: 16px;
+    }
+
+    i.fa-bars, i.fa-rss, i.fa-download {
+        font-size: 1.2rem;
         height: 48px;
         width: 48px;
         display: inline-block;
