@@ -68,16 +68,9 @@ div.grid {
 }
 
 /* STATION CARD */
-div.station {
+div.grid>a {
     flex: 1 0 21%;
     flex-grow: 0;
-    background-color: var(--card-color);
-    border-radius: 8px;
-    display: grid;
-    position: relative;
-    height: 180px;
-    transition: 300ms;
-    overflow: hidden;
 }
 
 div.station>img {
@@ -155,6 +148,7 @@ div.social-links>a:hover {
 div.social-links>a>div>i {
     display: inline-block;
     line-height: 48px;
+    font-size: 1.14rem;
     color: white;
     width: 48px;
     height: 48px;
@@ -203,8 +197,23 @@ div.copyright>span {
         display: flex;
     }
 
+    div.grid>a {
+        flex: 1 0 21%;
+        flex-grow: 0;
+    }
+
     div.station>p {
         font-size: 0.8rem;
+    }
+
+    div.grid>a>div.station {
+        background-color: var(--card-color);
+        border-radius: 8px;
+        display: grid;
+        position: relative;
+        height: 180px;
+        transition: 300ms;
+        overflow: hidden;
     }
 
     div.footer-container {
@@ -256,8 +265,8 @@ div.copyright>span {
     }
 
     div.station:hover>img {
-        height: 9.8rem;
-        transition: 300ms ease-in-out;
+        height: 9.1rem;
+        transition: 100ms ease-in;
     }
 
     div.station>p {
@@ -269,6 +278,11 @@ div.copyright>span {
         height: 100%;
     }
 
+    div.station:hover {
+        cursor: pointer;
+        background-color: var(--secondary-color);
+        transition: 700ms;
+    }
 }
 
 /* END STATION CARD */
@@ -339,11 +353,15 @@ div.copyright>span {
         gap: 8px;
     }
 
+    div.grid>a {
+        width: 100%;
+    }
+
     div.station {
         display: flex;
-        min-height: min-content;
+        background-color: var(--card-color);
+        border-radius: 8px;
         flex-direction: row;
-        width: 100%;
         align-items: flex-start;
         justify-content: flex-start;
         overflow: hidden;
