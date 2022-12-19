@@ -313,25 +313,102 @@ div.ad {
         transition: 700ms;
     }
 
-    div.listarea>ul {
-        display: flex;
-        gap: 8px;
-    }
-
-    div.listarea>ul>li>a>img {
-        width: 180px;
-        transition: 100ms ease-in;
-    }
-
-    div.listarea>ul>li>a:hover>img {
-        width: 190px;
-        transition: 100ms ease-in;
-    }
+   
 
     div.ad>span {
         font-size: 0.6rem;
         text-align: center;
-        color: rgba(128, 128, 128, 1.0)
+        color: #808080;
+    }
+
+    main.content-wrapper {
+        width: 100%;
+        overflow: hidden;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 96px;
+    }
+
+    div.download-badges>a>img {
+        height: 40px;
+     }
+
+    div.player-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--card-color);
+        margin: 8px;
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    img.scale-with-grid {
+        max-width: 540px;
+        min-width: 320px;
+        margin: 0 auto !important;
+    }
+
+    div.extra-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: var(--card-color);
+        border-radius: 8px;
+        margin: 10px;
+        margin-top: 16px;
+        padding: 10px;
+    }
+
+    div.listarea,
+    div.listarea>ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        list-style: none;
+    }
+
+    div.listarea>ul>li>a {
+        margin: 0 auto;
+    }
+
+    div.listarea>ul>li>a>img {
+        width: 18vw;
+        max-width: 240px;
+        min-width: 180px;
+        transition: 100ms ease-in;
+        border-radius: 4px;
+    }
+
+    div.listarea>ul>li>a:hover>img {
+        width: 18.5vw; max-width: 245px;
+        transition: 100ms ease-in;
+    }
+
+    div.side {
+        display: none;
+    }
+
+    div.top {
+        background-color: yellow;
+        height: 20px !important;
+        max-height: 20px;
+    }
+
+    div.ad>span {
+        font-size: 0.5rem;
+        text-align: center;
+        color: #808080;
+    }
+
+    div.fixed>div.header {
+        position: fixed !important;
+        width: 100%;
+        z-index: 999;
     }
 }
 
@@ -582,6 +659,16 @@ div.ad {
         font-size: 0.5rem;
         text-align: center;
         color: #808080;
+    }
+
+    div.download-badges {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    div.download-badges>a>img {
+       height: 48px;
     }
 
 }
