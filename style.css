@@ -38,7 +38,7 @@ div.header {
     padding: 16px 36px;
 }
 
-div.logo-container {
+a.logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +78,7 @@ ins.adsbygoogle {
 /* STATION CARD */
 div.grid>a {
     flex: 1 0 21%;
+    text-decoration: none;
     flex-grow: 0;
 }
 
@@ -104,7 +105,6 @@ a {
 
 a:hover {
     padding: 0;
-    font-weight: 500;
     color: var(--primary-accent-color);
     margin: 0;
     text-decoration: none;
@@ -203,7 +203,15 @@ div.ad {
 
 
 
-@media only screen and (min-width: 600px) {
+div.logo-container {
+    display: flex;
+    gap: 8px;
+    justify-self: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 720px) {
     div.container {
         overflow: hidden;
     }
@@ -232,7 +240,7 @@ div.ad {
     }
 
     div.station>p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     div.grid>a>div.station {
@@ -253,7 +261,7 @@ div.ad {
         padding-bottom: 40px;
     }
 
-    div.logo-container {
+    a.logo-container {
         margin: 0;
         justify-content: flex-start;
         flex-grow: 1;
@@ -272,6 +280,7 @@ div.ad {
     div.topbar>ul>li>a {
         padding: 0;
         margin: 0;
+        font-size: 0.9rem;
         text-decoration: none;
     }
 
@@ -313,7 +322,7 @@ div.ad {
         transition: 700ms;
     }
 
-   
+
 
     div.ad>span {
         font-size: 0.6rem;
@@ -331,7 +340,7 @@ div.ad {
 
     div.download-badges>a>img {
         height: 40px;
-     }
+    }
 
     div.player-container {
         display: flex;
@@ -385,7 +394,8 @@ div.ad {
     }
 
     div.listarea>ul>li>a:hover>img {
-        width: 18.5vw; max-width: 245px;
+        width: 18.5vw;
+        max-width: 245px;
         transition: 100ms ease-in;
     }
 
@@ -414,7 +424,7 @@ div.ad {
 
 /* END STATION CARD */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
     div.container {
         overflow: hidden;
     }
@@ -462,7 +472,7 @@ div.ad {
         align-items: flex-start;
     }
 
-    div.logo-container {
+    a.logo-container {
         left: 0;
         z-index: 0;
         right: 0;
@@ -472,6 +482,7 @@ div.ad {
         margin-left: 16px;
     }
 
+   
     a.menu-icon {
         margin-left: 12px;
         height: 48px;
@@ -668,7 +679,7 @@ div.ad {
     }
 
     div.download-badges>a>img {
-       height: 48px;
+        height: 48px;
     }
 
 }
