@@ -1,14 +1,14 @@
 :root {
     --primary-color: #af0c15;
     --primary-accent-color: #d2292d;
-    --primary-background-color: #181818;
+    --primary-background-color: #171717;
     --secondary-background-color: #282828;
     --secondary-color: #0d3580;
     --secondary-accent-color: #1761b0;
     --primary-text-color: #f3f3f3;
 
     --card-color: #070707;
-    --background-color: #171717;
+    --background-color: #232323;
 }
 
 * {
@@ -24,6 +24,7 @@ body {
     height: 100%;
     background-color: var(--background-color);
 }
+
 
 div.container {
     height: 100%;
@@ -204,6 +205,7 @@ div.ad {
 
 
 div.logo-container {
+    margin-left: 16px;
     display: flex;
     gap: 8px;
     justify-self: center;
@@ -224,7 +226,7 @@ div.logo-container {
         display: flex;
     }
 
-    div.hamburger {
+    a.menu-icon {
         display: none;
     }
 
@@ -462,6 +464,8 @@ div.logo-container {
         vertical-align: bottom;
     }
 
+   
+
     div.header {
         padding: 0;
         position: fixed;
@@ -479,28 +483,22 @@ div.logo-container {
         flex-grow: 1;
         display: flex;
         justify-content: flex-start;
-        margin-left: 16px;
     }
 
-   
-    a.menu-icon {
-        margin-left: 12px;
-        height: 48px;
-        z-index: 3;
-        width: 48px;
-        display: none;
-        justify-content: center;
-        align-self: center;
-        background-color: transparent;
+    a.menu-icon>span {
+        display: block;
+        margin-top: -8px;
+        text-align: center;
+        font-size: 0.5rem;
     }
 
     a.news,
     a.download {
-        display: block;
-        margin-left: 12px;
-        height: 48px;
+        display: flex;
+        flex-direction: column;
+        height: 64px;
         z-index: 3;
-        width: 48px;
+        width: 64px;
         justify-content: center;
         align-self: center;
         background-color: transparent;
@@ -515,7 +513,7 @@ div.logo-container {
     i.fa-download {
         font-size: 1.2rem;
         height: 48px;
-        width: 48px;
+        width: 64px;
         display: inline-block;
         line-height: 48px;
         color: #dedede;
