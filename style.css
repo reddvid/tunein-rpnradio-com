@@ -497,6 +497,7 @@ div.logo-container {
         display: flex;
         flex-direction: column;
         height: 64px;
+        margin-top: -8px;
         z-index: 3;
         width: 64px;
         justify-content: center;
@@ -505,7 +506,7 @@ div.logo-container {
     }
 
     a.download {
-        margin-right: 16px;
+        margin-right: 8px;
     }
 
     i.fa-bars,
