@@ -200,6 +200,12 @@ div.copyright>span {
         display: none;
     }
 
+    div.grid {
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
     div.grid>a {
         flex: 1 0 21%;
         flex-grow: 0;
