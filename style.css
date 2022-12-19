@@ -50,11 +50,13 @@ div.logo-container>span {
     font-weight: 700;
 }
 
-div.grid-container, main.content-wrapper {
+div.grid-container,
+main.content-wrapper {
     height: 100%;
 }
 
 main.content-wrapper {
+    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -68,7 +70,8 @@ div.grid {
     gap: 20px;
 }
 
-div.ad,ins.adsbygoogle {
+div.ad,
+ins.adsbygoogle {
     overflow: hidden;
 }
 
@@ -193,6 +196,13 @@ div.copyright>span {
     text-align: center;
 }
 
+div.ad {
+    width: 100%;
+    text-align: center;
+}
+
+
+
 @media only screen and (min-width: 600px) {
     div.container {
         overflow: hidden;
@@ -301,6 +311,27 @@ div.copyright>span {
         cursor: pointer;
         background-color: var(--secondary-color);
         transition: 700ms;
+    }
+
+    div.listarea>ul {
+        display: flex;
+        gap: 8px;
+    }
+
+    div.listarea>ul>li>a>img {
+        width: 180px;
+        transition: 100ms ease-in;
+    }
+
+    div.listarea>ul>li>a:hover>img {
+        width: 190px;
+        transition: 100ms ease-in;
+    }
+
+    div.ad>span {
+        font-size: 0.6rem;
+        text-align: center;
+        color: rgba(128, 128, 128, 1.0)
     }
 }
 
@@ -480,13 +511,75 @@ div.copyright>span {
         font-size: 0.7rem;
     }
 
+    main.content-wrapper {
+        width: 100%;
+        margin-top: 80px;
+        overflow: hidden;
+    }
+
+    div.player-container {
+        display: flex;
+        margin: 0 auto !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img.scale-with-grid {
+        width: 80%;
+        max-width: 400px;
+        min-width: 220px;
+        margin: 0 auto !important;
+    }
+
+    div.extra-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--card-color);
+        border-radius: 8px;
+        margin: 10px;
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    div.listarea,
+    div.listarea>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+
+    div.listarea>ul>li>a {
+        margin: 0 auto;
+    }
+
+    div.listarea>ul>li>a>img {
+        transition: 100ms ease-in;
+        width: 50%;
+        border-radius: 4px;
+    }
+
+
+
     div.side {
         display: none;
     }
 
     div.top {
-        max-height: 50px;
+        background-color: yellow;
+        height: 20px !important;
+        max-height: 20px;
     }
+
+    div.ad>span {
+        font-size: 0.5rem;
+        text-align: center;
+        color: rgba(128, 128, 128, 1.0)
+    }
+
 }
 
 div.sidebar {
