@@ -11,6 +11,20 @@
     --background-color: #232323;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+    margin: 2px 2px 2px 0;
+    border-radius: 8px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -202,8 +216,6 @@ div.ad {
     text-align: center;
 }
 
-
-
 div.logo-container {
     margin-left: 16px;
     display: flex;
@@ -330,6 +342,7 @@ div.logo-container {
         font-size: 0.6rem;
         text-align: center;
         color: #808080;
+        margin-bottom: 24px;
     }
 
     main.content-wrapper {
@@ -429,6 +442,7 @@ div.logo-container {
 @media only screen and (max-width: 720px) {
     div.container {
         overflow: hidden;
+    heigt:;
     }
 
     div#download {
@@ -464,7 +478,7 @@ div.logo-container {
         vertical-align: bottom;
     }
 
-   
+
 
     div.header {
         padding: 0;
